@@ -1,40 +1,18 @@
 var async = require('async');
-var GitHubApi = require('github');
+var GithubApi = require('github');
 
-var github = new GitHubApi({
+var github = new GithubApi({
 	version: '3.0.0'
 });
 
-
-async.series([
-	function funcOne(callback) {
-		callback(null, 'Function one');
-	},
-	function funcTwo(callback) {
-		setTimeout(function() {
-			callback(null, 'Function two');
-		}, 2000);
-	},
-	function funcThree(callback) {
-		callback(null, 'Function three');
-	}
-], function(err, result) {
-	if (err) {
-		console.error(err);
-		return;
-	}
-
-	console.log(result);
-});
-
-
 async.waterfall([
 	function getUserAvatar(callback) {
-		github.search.users({ q:'airbnb' }, function(err, res) {
+		github.search.users({ q: 'airbnb' }, function(err, res) {
 			if (err) {
 				callback(err, null);
 				return;
 			}
+
 			var avatarUrl = res.items[0].avatar_url;
 			callback(null, avatarUrl);
 		});
@@ -50,3 +28,17 @@ async.waterfall([
 	}
 	console.log(result);
 });
+
+async.series([
+	function functionOne(callback) {
+		callback(null, 'RESULT OF FUNCTION ONE');
+	},
+	function functionTwo(callback) {
+		callback(null, 'RESULT OF FUNCTION TWO');
+	},
+	function functionThree(callback) {
+		callback(null, 'RESULT OF FUNCTION Three');
+	}
+], function(err, result) {
+	console.log(result);
+})
