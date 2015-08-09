@@ -1,0 +1,11 @@
+{
+  "name": "Prehooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  	"precommit": "jshint index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
