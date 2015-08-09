@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "css-loader": "^0.15.6",
+    "extract-text-webpack-plugin": "^0.8.2",
     "http-server": "^0.8.0",
     "node-sass": "^3.2.0",
     "sass-loader": "^1.0.3",
