@@ -6,6 +6,9 @@
   "scripts": {
   	"precommit": "jshint index.js"
   },
-  "author": "",
+  "devDependencies": {
+  	"husky": "0.7.0"
+  }
+  "author": "Yongzhi Huang",
   "license": "ISC"
 }
