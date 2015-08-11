@@ -4,11 +4,12 @@ var myFunction = function() {
 		console.log('The number is 10')
 	}
 
-	while (num !== 10)
+	while (num !== 10) 
 		doSomething()
 
 	function doSomething() {
 		console.log('do something')
 	}
 
+	console.log('hello world');
 }
