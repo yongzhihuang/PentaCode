@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  	"precommit": "jshint index.js"
+    "precommit": "jshint index.js"
   },
   "devDependencies": {
-  	"husky": "0.7.0"
-  }
+    "husky": "0.7.0",
+    "jshint": "^2.8.0"
+  },
   "author": "Yongzhi Huang",
   "license": "ISC"
 }
