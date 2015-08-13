@@ -1,11 +1,14 @@
 {
-  "name": "Prehooks",
+  "name": "Jshint",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
 
   },
-  "author": "",
+  "devDependencies": {
+    "jshint": "^2.8.0"
+  },
+  "author": "PentaCode",
   "license": "ISC"
 }
