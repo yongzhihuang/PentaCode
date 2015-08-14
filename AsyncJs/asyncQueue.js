@@ -29,7 +29,7 @@ _.each(tasksList, function(task) {
 		if (err) {
 			console.log(err);
 		}
-		console.log('set of 5 is done');
+
 	});
 });
 
