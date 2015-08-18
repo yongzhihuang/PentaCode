@@ -24,12 +24,12 @@ calculate(5, function(err, result) {
 
 
 //seq calculate(addFive(timesTen(5)))
-// var calculate = async.seq(addFive, timesTen);
+var calculate = async.seq(addFive, timesTen);
 
-// calculate(5, function(err, result) {
-// 	//What do you think result is equal to?
-// 	console.log(result);
-// })
+calculate(5, function(err, result) {
+	//What do you think result is equal to?
+	console.log(result);
+})
 
 
 

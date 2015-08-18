@@ -13,8 +13,9 @@ async.whilst(
 
 		//Simulate ajax/processing
 		//callback must be called once this function has completed, it takes an optional error argument
+		//setTimeout(callback, 1000);
 		//so if there's an error, you do callback(err) and it will immediately end.
-		setTimeout(callback, 1000);
+		setTimeout(callback('err'), 1000);
 	},
 	function callback(err) {
 		if (err) {
