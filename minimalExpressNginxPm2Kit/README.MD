@@ -2,6 +2,7 @@ Minimal Express + Nginx + Pm2 Starter Kit
 
 #Files
 `default`: Nginx config file to proxy node app to port 80
+
 `myapp`: Express project with PM2 config file
 
 #Installation
