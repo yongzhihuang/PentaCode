@@ -2,6 +2,7 @@
 Author: Yongzhi Huang
 Website: https://www.youtube.com/pentacode
 Twitter: twitter.com/whyzhi
+01-arrow_functions.js
 ********/
 
 // Solving lexical "This" with self = this
