@@ -29,12 +29,12 @@ console.log([...name]);
 fruits implements an iterator function with es6 symbols
 
 fruit[Symbol.iterator] = function() {
-	// Set next array index
-	var nextIndex = 0;
+	// Set arrayindex
+	var index = 0;
 	return {
 		next: function() {
 			// In a way this is similar to recursion, where we will pass in a modified value as a parameter to the function Iterator and call it as long as done = false
-			return nextIndex < array.length ? {value: array[nextIndex++], done: false} : {done: true};
+			return index < array.length ? {value: array[index++], done: false} : {done: true};
 		}
 	}
 }
