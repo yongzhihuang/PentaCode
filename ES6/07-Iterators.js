@@ -22,6 +22,7 @@ for (let letter of name) {
 	console.log(letter);
 }
 
+//shortcut
 console.log([...name]);
 
 /* How does it work?
