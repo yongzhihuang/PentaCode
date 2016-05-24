@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^1.4.0",
+    "async": "^2.0.0-rc.5",
     "github": "^0.2.4",
     "jquery": "^2.1.4",
     "jsdom": "^3.0.0",
