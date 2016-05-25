@@ -1,7 +1,7 @@
 /*******
 Author: Yongzhi Huang
 Website: https://www.youtube.com/pentacode
-Twitter: twitter.com/whyzhi
+Twitter: twitter.com/pentacodevids
 05-destructuring.js
 ********/
 

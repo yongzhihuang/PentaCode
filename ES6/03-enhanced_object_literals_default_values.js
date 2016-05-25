@@ -1,7 +1,7 @@
 /*******
 Author: Yongzhi Huang
 Website: https://www.youtube.com/pentacode
-Twitter: twitter.com/whyzhi
+Twitter: twitter.com/pentacodevids
 03-enhanced_object_literals_default_values.js
 ********/
 

@@ -1,9 +1,11 @@
 /*******
 Author: Yongzhi Huang
 Website: https://www.youtube.com/pentacode
-Twitter: twitter.com/whyzhi
+Twitter: twitter.com/pentacodevids
 07-Iterators.js
 ********/
+
+
 const fruits = ['apple', 'pear', 'banana', 'strawberry'];
 
 // No guarantee with order or iteration

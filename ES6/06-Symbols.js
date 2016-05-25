@@ -1,13 +1,13 @@
 /*******
 Author: Yongzhi Huang
 Website: https://www.youtube.com/pentacode
-Twitter: twitter.com/whyzhi
+Twitter: twitter.com/pentacodevids
 06-Symbols.js
 ********/
 /*
  - New primitive in ES6
  - Unique and immutable data type
- - Mainly used to guarantee unique property keys
+ - Mainly used to guarantee unique property keys, so you don't haave to worry about overriding or conflicting with existing keys
  */
 
 // Uniqueness
@@ -22,6 +22,7 @@ console.log(COLOR_RED === COLOR_BAD_RED);
 
 // They cannot be coverted to string implicitly
 const foo = Symbol('foo');
+const badFoo = new Symbol('foo');	// BAD
 const sentence = 'My favorite word is ' + foo;
 const anotherSentence = 'hello ' + String(foo);
 console.log(anotherSentence);
@@ -38,6 +39,21 @@ const user = {
 }
 console.log(user[KEY_NAME]);
 
+// A word about enumerating Symbols
+const myObj = {
+	[Symbol('name')]: 'sally',
+	property1: 1,
+	property2: 2
+};
+
+// Get keys that are non symbol
+console.log(Object.keys(myObj));
+
+// Get only Symbol
+console.log(Object.getOwnPropertySymbols(myObj));
+
+// Get all
+console.log(Reflect.ownKeys(myObj));
 
 // Global registry
 // Good idea to prefix them to avoid collision
