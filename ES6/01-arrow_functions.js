@@ -16,7 +16,7 @@ myVar.printNumbers = function() {
   this.numbers.forEach(function(number) {
       console.log(self.name + ' counts ' + number);
   });
-  
+
 }
 myVar.printNumbers();
 
@@ -32,7 +32,7 @@ myVar.printNumbers = function() {
   this.numbers.forEach(function(number) {
       console.log(this.name + ' counts ' + number);
   }.bind(this));
-  
+
 }
 myVar.printNumbers();
 
@@ -46,14 +46,14 @@ myVar.printNumbers = function() {
   this.numbers.forEach((number) => {
       console.log(this.name + ' counts ' + number);
   });
-  
+
 }
 myVar.printNumbers();
 
 
 
 // Arrow function short hand
-ar myVar = {};
+var myVar = {};
 
 myVar.name = 'pentacode';
 myVar.numbers = [1,2,3,4,5];
