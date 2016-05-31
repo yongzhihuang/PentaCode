@@ -2,13 +2,13 @@
 Author: Yongzhi Huang
 Website: https://www.youtube.com/pentacode
 Twitter: twitter.com/pentacodevids
-06-Symbols.js
+06-symbols.js
 ********/
 /*
  - New primitive in ES6
  - Unique and immutable data type
- - Mainly used to guarantee unique property keys, so you don't haave to worry about overriding or conflicting with existing keys
- */
+ - Concept of namespace
+*/
 
 // Uniqueness
 const COLOR_BLUE = 'blue';
@@ -55,14 +55,19 @@ console.log(Object.getOwnPropertySymbols(myObj));
 // Get all
 console.log(Reflect.ownKeys(myObj));
 
-// Global registry
-// Good idea to prefix them to avoid collision
-const COLOR_RED = Symbol.for('red');
-const COLOR_BAD_RED = Symbol.for('red');
-console.log(COLOR_RED === COLOR_BAD_RED);
-
-
-
+// Lookup
+// If Symbol.for('x') does not exist, the first call will create it, by the time it get to the comparison on the right hand side, it's used as a lookup, so Symbol.for() both creates and looks up a symbol.
+console.log(Symbol.for('x') === Symbol.for('x'))
 
 
 // For use in iterators (lesson 7)
+var fruit = [];
+fruit[Symbol.iterator] = function() {}
+
+/*
+What do we use Symbols for?
+ 1. Use it to define unique object properties to avoid name clashes
+ 2. "Private" property, you can only access them via ES6 apis, meaning you'll have to explicitly ask for them, serves as a protection against accidental access
+ 3. Predefined way to define implementation, example Symbol.iterator
+*/
+ */

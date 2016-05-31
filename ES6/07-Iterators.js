@@ -2,7 +2,7 @@
 Author: Yongzhi Huang
 Website: https://www.youtube.com/pentacode
 Twitter: twitter.com/pentacodevids
-07-Iterators.js
+07-iterators.js
 ********/
 
 
