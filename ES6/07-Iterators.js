@@ -10,7 +10,7 @@ const fruits = ['apple', 'pear', 'banana', 'strawberry'];
 
 // No guarantee with order or iteration
 for (let key in fruits) {
-	console.log(key);
+	console.log(fruits[key]);
 }
 
 // Guarantees order of iteration
