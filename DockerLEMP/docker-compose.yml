@@ -1,0 +1,34 @@
+nginx:
+    image: tutum/nginx
+    ports:
+        - "80:80"
+    links:
+        - phpfpm
+    volumes:
+        - ./public:/usr/share/nginx/html
+        - ./nginx/default:/etc/nginx/sites-available/default
+        - ./nginx/default:/etc/nginx/sites-enabled/default
+
+        - ./logs/nginx-error.log:/var/log/nginx/error.log
+        - ./logs/nginx-access.log:/var/log/nginx/access.log
+phpfpm:
+    image: php:fpm
+    ports:
+        - "9000:9000"
+    volumes:
+        - ./public:/usr/share/nginx/html
+mysql:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: admin
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  restart: always
+  links:
+    - mysql
+  ports:
+    - 8183:80
+  environment:
+    MYSQL_USERNAME: admin
+    MYSQL_ROOT_PASSWORD: admin
+    PMA_ARBITRARY: 1

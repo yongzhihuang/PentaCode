@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Launch",
-            "type": "node",
+            "type": "nodes",
             "request": "launch",
             "program": "${workspaceRoot}/AsyncJs/asyncWaterfall.js",
             "stopOnEntry": false,
