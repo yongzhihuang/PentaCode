@@ -2,3 +2,6 @@
 192.168.99.1 - - [06/Jul/2016:18:13:21 +0000] "GET / HTTP/1.1" 200 23689 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"
 192.168.99.1 - - [06/Jul/2016:18:13:22 +0000] "GET / HTTP/1.1" 200 23689 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"
 192.168.99.1 - - [06/Jul/2016:18:14:02 +0000] "GET / HTTP/1.1" 200 23691 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"
+192.168.99.1 - - [08/Jul/2016:17:14:46 +0000] "GET / HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"
+192.168.99.1 - - [08/Jul/2016:17:14:46 +0000] "GET /favicon.ico HTTP/1.1" 404 47 "http://192.168.99.100/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"
+192.168.99.1 - - [08/Jul/2016:17:15:26 +0000] "GET / HTTP/1.1" 200 23857 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"

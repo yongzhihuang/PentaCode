@@ -5,7 +5,6 @@ nginx:
     links:
         - phpfpm
     volumes:
-        - ./public:/usr/share/nginx/html
         - ./nginx/default:/etc/nginx/sites-available/default
         - ./nginx/default:/etc/nginx/sites-enabled/default
 

@@ -4,7 +4,8 @@ if (window.showAds) {
     ga('send', 'event', 'User Interaction', 'Adblock', 'Disabled');
 } else {
     // You user uses adbocker, do something here
-    document.getElementById('status').innerHTML = 'You have Adblocker!'
+    document.getElementById('status').innerHTML = 'You have Adblocker!';
+    
     ga('send', 'event', 'User Interaction', 'Adblock', 'Enabled');
 
 }
