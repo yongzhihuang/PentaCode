@@ -5,3 +5,8 @@ body {
 .jumbotron-part-two {
 	display: none;
 }
+
+.logo {
+	display: inline;
+	float: right;
+}
