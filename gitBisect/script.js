@@ -1,8 +1,8 @@
 $(function() {
 	$('.btn-do-something').on('click', function() {
-		$('.jumbotron').slideUp(200, function() {
-			$('.marketing').fadeOut(200, function() {
-				$('.jumbotron-part-two').fadeIn();
+		$('.jumbotrosn').slideUp(200, function() {
+			$('.marketings').fadeOut(200, function() {
+				$('.jumbotron-part-twos').fadeIn();
 			});
 		});
 	});
