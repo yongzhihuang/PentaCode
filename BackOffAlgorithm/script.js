@@ -23,7 +23,7 @@ $(function() {
 	  	var requestTime = new Date().getTime() - startTime;
 			
 	  	// Uncomment to simulate server response timeouts
-			//requestTime = Math.floor(Math.random() * 6) + 996;
+			requestTime = Math.floor(Math.random() * 6) + 996;
 
 			// The meat, if the request took too long, and the current stored pollTime is less than the threshold, then set the pollTime to whatever it is times two.  If it's over than timeout threshold, then max it out at the threshold.
 			if (requestTime >= MAX_REQ_TIMEOUT_TIME) {
