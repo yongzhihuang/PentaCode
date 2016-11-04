@@ -1,0 +1,11 @@
+redis:
+    image: sameersbn/redis:latest
+    ports:
+        - 9001:6379
+redisBanner:
+    image: tenstartups/redis-commander
+    command: --redis-host redis
+    links:
+      - redis:redis
+    ports:
+      - 9002:8081
