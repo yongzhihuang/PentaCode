@@ -4,17 +4,17 @@ var Person= function(name) {
 	this._health = 100;  // private variable
 	console.log('Person constructor called');
 
-        // class method
+    // class method
 	this.walk= function() {
 		console.log(this.name + ' is walking')
 	}
 
-        // getter
+    // getter
 	this.getHealth = function() {
 		return this._health;
 	}
 
-        // setter
+    // setter
 	this.setHealth = function(health) {
 		this._health = health;
 	}
@@ -23,12 +23,12 @@ var Person= function(name) {
 // Create some new persons, note, the `new` keyword is used to invoke a constructor
 var joe = new Person('joe');
 joe.setHealth(100);
-joe.getHealth(); // 100
+console.log(joe.getHealth()); // 100
 joe.walk(); // joe is walking
 
 var alice = new Person('alice');
 alice.setHealth(30);
-alice.getHealth(); // 30
+console.log(alice.getHealth()); // 30
 alice.walk(); // alice is walking
 
 // Let's create a common method for these people
@@ -52,8 +52,8 @@ Criminal.prototype = Object.create(Person.prototype);
 Criminal.prototype.constructor = Criminal;
 
 // Method override
-Criminal.prototype.walk= function() {
-	console.log('Criminals don\'t walk! They drive in getaway cars');
+Criminal.prototype.sleep= function(arg) {
+  console.log('Criminals don\'t sleep! They rob banks!');
 }
 
 // Add a method ONLY to criminal class
@@ -63,7 +63,7 @@ Criminal.prototype.robBank = function() {
 
 // Create a Criminal instance
 var bob = new Criminal('bob');
-bob.walk(); // this method was overridden, prints out "Criminals don't walk! They drive in getaway cars"
+bob.sleep(); // this method was overridden, prints out "Criminals don't sleep! They rob banks!"
 bob.robBank(); // special method only for Criminal class, prints out "Criminal is robbing a bank"
 joe.robBank(); // Error, this method does not exist on Person class, it only exists in Criminal class
 
