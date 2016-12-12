@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="main.css" media="all">
+
+</head>
+<body>
+
+<script src="./js/jquery-3.1.0.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/main.js"></script>
+
+<script>
+    // Load scripts asynchronously, create DOM on the fly
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = './myScript.js';
+        s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+</script>
+
+<!--Load scripts via the "async" keyword-->
+<script async src="./myScript.js"></script>
+
+</body>
+</html>
