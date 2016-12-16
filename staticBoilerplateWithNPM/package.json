@@ -1,0 +1,24 @@
+{
+  "name": "staticboilerplatewithnpm",
+  "version": "1.0.0",
+  "description": "a simple static html boilerpalte with npm",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss build/css/style.min.css",
+    "build-js": "browserify js/**.js > build/js/script.min.js",
+    "build": "npm run build-css && npm run build-js",
+    "server": "cd build && python -m SimpleHTTPServer 8000",
+    "start": "nodemon -e js,scss -x \"npm run build && npm run server\" --ignore build/"
+  },
+  "author": "pentacode",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "node-sass": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
