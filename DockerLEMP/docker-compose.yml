@@ -28,6 +28,6 @@ phpmyadmin:
   ports:
     - 8183:80
   environment:
-    MYSQL_USERNAME: admin
-    MYSQL_ROOT_PASSWORD: admin
+    PMA_USER: admin
+    PMA_PASSWORD: admin
     PMA_ARBITRARY: 1
