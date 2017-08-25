@@ -1,0 +1,14 @@
+{
+  "name": "solr-node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pentacode",
+  "license": "ISC",
+  "dependencies": {
+    "solr-node": "1.0.13"
+  }
+}
