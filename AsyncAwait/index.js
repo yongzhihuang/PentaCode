@@ -83,6 +83,7 @@ function GetReactAvatar() {
 // async function startParallel() {
 //   try {
 //     let [ pentaCodeAvatarUrl, reactAvatarUrl ] = await Promise.all([getPentaCodeAvatar(), GetReactAvatar()]);
+//     console.log(pentaCodeAvatarUrl, reactAvatarUrl)
 //   } catch (e) {
 //     console.error('Error in startParallel (Async Await Based)', e);
 //   }
