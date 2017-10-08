@@ -6,12 +6,12 @@
     "react-scripts": "0.8.4"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "lodash": "^4.17.2",
-    "react": "^15.4.1",
-    "react-bootstrap": "^0.30.7",
-    "react-dom": "^15.4.1",
-    "react-sticky": "^5.0.5"
+    "bootstrap": "3.3.7",
+    "lodash": "4.17.2",
+    "react": "15.4.1",
+    "react-bootstrap": "0.30.7",
+    "react-dom": "15.4.1",
+    "react-sticky": "5.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

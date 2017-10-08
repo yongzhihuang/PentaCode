@@ -7,7 +7,7 @@
   	"lint": "jshint index.js"
   },
   "devDependencies": {
-    "jshint": "^2.8.0"
+    "jshint": "2.8.0"
   },
   "author": "PentaCode",
   "license": "ISC"

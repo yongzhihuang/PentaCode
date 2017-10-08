@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "husky": "0.7.0",
-    "jshint": "^2.8.0"
+    "jshint": "2.8.0"
   },
   "author": "PentaCode",
   "license": "ISC"
