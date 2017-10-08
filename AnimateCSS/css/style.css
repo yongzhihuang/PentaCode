@@ -1,0 +1,32 @@
+h1 {
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size:70px;
+}
+
+body {
+  background: #274059;
+  margin: 0 auto;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 15px 0;
+  font-size: 25px;
+}
+
+
+.randomize {
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
