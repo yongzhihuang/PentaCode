@@ -20,7 +20,7 @@ function getPentaCodeAvatar() {
   })
 }
 
-function GetReactAvatar() {
+function getReactAvatar() {
   return new Promise((resolve, reject) => {
     github.search.users({ q: 'react' }, (err, res) => {
       if (err) {
@@ -66,23 +66,23 @@ function GetReactAvatar() {
 // start();
 
 // ======================Async Await Synchronous========================
-// async function startSynchronous() {
-//   try {
-//     const pentaCodeAvatarUrl = await getPentaCodeAvatar();
-//     const reactAvatarUrl = await GetReactAvatar();
-//     const totalURL = pentaCodeAvatarUrl + reactAvatarUrl;
-//     console.log(totalURL);
-//   } catch (e) {
-//     console.error('Error in startSynchronous (Async Await Based)', e);
-//   }
-// }
+async function startSynchronous() {
+  try {
+    const pentaCodeAvatarUrl = await getPentaCodeAvatar();
+    const reactAvatarUrl = await getReactAvatar();
+    const totalURL = pentaCodeAvatarUrl + reactAvatarUrl;
+    console.log(totalURL);
+  } catch (e) {
+    console.error('Error in startSynchronous (Async Await Based)', e);
+  }
+}
 
-// startSynchronous();
+startSynchronous();
 
 // ======================Async Await Parallel========================
 // async function startParallel() {
 //   try {
-//     let [ pentaCodeAvatarUrl, reactAvatarUrl ] = await Promise.all([getPentaCodeAvatar(), GetReactAvatar()]);
+//     let [ pentaCodeAvatarUrl, reactAvatarUrl ] = await Promise.all([getPentaCodeAvatar(), getReactAvatar()]);
 //     console.log(pentaCodeAvatarUrl, reactAvatarUrl)
 //   } catch (e) {
 //     console.error('Error in startParallel (Async Await Based)', e);
