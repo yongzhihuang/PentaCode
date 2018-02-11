@@ -1,5 +1,5 @@
 $(function() {
-  const animationName = 'fadeInUp';
+  const animationName = 'jello';
   $('li').removeClass().addClass(`animated ${animationName}`);
 
   const listOfAnimations = [
