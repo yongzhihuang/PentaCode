@@ -1,15 +1,15 @@
 1. https://certbot.eff.org/
 2.
-$ sudo apt-get update
-$ sudo apt-get install software-properties-common
-$ sudo add-apt-repository ppa:certbot/certbot
-$ sudo apt-get update
-$ sudo apt-get install python-certbot-nginx
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-nginx
 
 3. Auto, works when you have one virtual server on nginx
 
 3. manual, or if you have multiple virtual servers under nginx
-sudo letsencrypt certonly -a webroot --webroot-path=/usr/share/nginx/website.com/ -d website.com -d www.website.com
+sudo letsencrypt certonly -a webroot --webroot-path=/usr/share/nginx/website.com/ -d website.com
 
 4. Edit nginx config to add ssl entries
   - Add redirect to https in port 80 block
