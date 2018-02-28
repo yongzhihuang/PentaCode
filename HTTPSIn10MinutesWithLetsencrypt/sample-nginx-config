@@ -1,0 +1,18 @@
+server {
+    listen 80;
+    listen [::]:80;
+    server_name www.website.com *.website.com;
+    return 301 https://$host$request_uri;
+    root /usr/share/nginx/website.com;
+}
+
+server {
+  server_name website.com;
+  listen 443 ssl;
+  listen [::]:443 ssl;
+  root /usr/share/nginx/website.com;
+  index index.php index.html index.htm;
+
+  ssl_certificate /etc/letsencrypt/live/website.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/website.com/privkey.pem;
+}
