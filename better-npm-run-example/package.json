@@ -9,10 +9,27 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
+    "start": "bnr start",
+    "build:dev": "bnr build:dev",
+    "build:prod": "bnr build:prod",
+    "test": "bnr test",
+    "eject": "bnr eject"
+  },
+  "betterScripts": {
     "start": "react-scripts start",
     "build:dev": "NODE_ENV=dev react-scripts build --flagone --flagtwo --flagthree",
-    "build:prod": "NODE_ENV=production react-scripts build --flagone --flagtwo --flagthree",
-    "test": "NODE_ENV=production react-scripts test --env=jsdom",
+    "build:prod": {
+      "command": "react-scripts build --flagone --flagtwo --flagthree",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "test": {
+      "command": "react-scripts test --env=jsdom",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
     "eject": "react-scripts eject"
   }
 }
