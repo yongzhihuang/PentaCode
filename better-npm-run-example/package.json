@@ -1,0 +1,18 @@
+{
+  "name": "better-npm-run-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "better-npm-run": "^0.1.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build:dev": "NODE_ENV=dev react-scripts build --flagone --flagtwo --flagthree",
+    "build:prod": "NODE_ENV=production react-scripts build --flagone --flagtwo --flagthree",
+    "test": "NODE_ENV=production react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
