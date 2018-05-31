@@ -1,0 +1,29 @@
+body {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+h1 {
+}
+
+#lipsum {
+}
+
+p {
+  font-size: 20px;
+}
+
+
+#infinite-scroll-trigger {
+  height: 10px;
+  width: 100%;
+  background: tomato;
+  margin: 0 auto;
+  border: solid 1px black;
+}
