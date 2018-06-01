@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.convert {
+  width: 150px;
+  padding: 15px;
+  margin: 0 auto;
+  background: tomato;
+  color: white;
+  cursor: pointer;
+}
+
+.convert:hover {
+  background: rgba(23, 50, 63, 0.568);
+}
+
+#g-recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+input {
+  width: 400px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
