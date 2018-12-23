@@ -1,0 +1,26 @@
+<html>
+<body>
+	<ul class="comments-list">
+
+	</ul>
+</body>
+<script>
+	(async () => {
+		const getComments = () => {
+			return fetch('https://jsonplaceholder.typicode.com/comments')
+				.then(response => response.json());
+		}
+
+		function renderComments(comments, container) {
+			let commentsListHTML = '';
+			comments.forEach(comment => commentsListHTML += `<li><b>${comment.email}</b>: ${comment.body})</li>`);
+
+			container.innerHTML = commentsListHTML;
+		}
+
+		const comments = await getComments();
+		const container = document.querySelector('.comments-list');
+		renderComments(comments, container);
+	})();
+</script>
+</html>
