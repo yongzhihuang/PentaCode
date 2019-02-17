@@ -2,7 +2,7 @@
 Project files for PentaCode Youtube channel.
 
 Website:
-http://penta-code.com
+https://penta-code.com
 
 Channel:
 https://www.youtube.com/Pentacode
