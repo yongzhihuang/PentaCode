@@ -6,7 +6,9 @@ var counter = 0;
 //Whilst will execute the function fn while condition function returns true, it will call callback when the job is done or if any error occurs.
 
 async.whilst(
-	function testCondition() { return counter < 5; },
+	function testCondition(cb) {
+        cb(null, counter < 5);
+    },
 	function increaseCounter(callback) {
 		counter++;
 		console.log('counter is now', counter);
