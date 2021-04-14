@@ -1,0 +1,6 @@
+name = "penta-worker"
+type = "webpack"
+account_id = "9a6856f1affd723d6ec95d08b68fe387"
+workers_dev = true
+route = ""
+zone_id = ""
