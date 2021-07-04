@@ -3,9 +3,9 @@
     "configurations": [
         {
             "name": "Launch",
-            "type": "nodes",
+            "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/AsyncJs/asyncWaterfall.js",
+            "program": "${workspaceRoot}/AsyncAwait/index.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",

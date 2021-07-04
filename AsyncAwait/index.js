@@ -71,7 +71,6 @@ async function startSynchronous() {
     const pentaCodeAvatarUrl = await getPentaCodeAvatar();
     const reactAvatarUrl = await getReactAvatar();
     const totalURL = pentaCodeAvatarUrl + reactAvatarUrl;
-    console.log(totalURL);
   } catch (e) {
     console.error('Error in startSynchronous (Async Await Based)', e);
   }
