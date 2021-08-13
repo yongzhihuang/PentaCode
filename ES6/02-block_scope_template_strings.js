@@ -46,8 +46,8 @@ let className = 'foo';
 let balance = 400;
 
 const outputDIV = `<div class="${className}">
-											Balance: ${balance}
-									 </div>`;
+						Balance: ${balance}
+					</div>`;
 
 // Express interpolation
 let x = 10;
