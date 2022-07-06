@@ -14,7 +14,7 @@
     "express": "4.15.1",
     "jquery": "3.1.0",
     "lodash": ">=4.17.5",
-    "moment": "2.21.0"
+    "moment": "2.29.4"
   },
   "devDependencies": {
     "babel": "6.23.0"
