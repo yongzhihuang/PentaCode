@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pentacode Javascript Import Maps Example</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "sayHi": "./sayHi.js",
+          "lodash/": "https://cdn.skypack.dev/lodash-es/",
+          "moment": "https://cdn.skypack.dev/moment"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    This is the body
+    <script type="module">
+      // import moment from "moment";
+      // console.log(moment().format("MMMM Do YYYY, h:mm:ss a"));
+
+      import flatten from "lodash/flatten";
+      import sayHi from "sayHi";
+      const flattenedNumbers = flatten([1, [2, [3, [4]], 5]]);
+      console.log(flattenedNumbers);
+      sayHi();
+    </script>
+  </body>
+</html>
